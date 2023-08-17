@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="input_container">
+        <input type="text" name="Product" id="Product" placeholder="Input your product">
+        <input type="number" name="Price" id="Price" placeholder="Price">
+        <button type="button" onclick="addvalue()" id="submit"> Submit</button>
+        <button type="button" onclick="Removelast()"> Remove Last Order</button>
+        <button type="button" onclick="ClearAll()"> Clear All Data</button>
+    </div>
+    <div id="showdetail">
+        <h1>Order List</h1>
+    </div>
+
+   <div id="totalprice"></div>
+   <img src="Asset/shopingcart.png" id="shopingcart">
+   <div id="cartno"></div>
+    
+</body>
+</html>

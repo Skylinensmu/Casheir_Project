@@ -1,0 +1,131 @@
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+body{
+background-image: url(Asset/BG2.jpg);
+background-size: auto;
+background-repeat: no-repeat;
+width: 100%;
+height: 100%;
+}
+
+
+.input_container{
+width: 100%;
+height: 2rem;
+display: flex ;
+gap: 20px;
+justify-content: center;
+position: absolute;
+flex-direction: row;
+}
+
+
+input{
+width: 10rem;
+height: 100%;
+border-radius: 10px;
+background-color: rgba(15, 15, 15, 0.5);
+border: 2px solid white;
+color: white;
+text-align: center;
+}
+
+::placeholder {
+text-align: center;
+color: white;
+font-family: sans-serif;
+}
+
+button {
+width: 10rem;
+height: 100%;
+color: white;
+background-color: rgba(15, 15, 15, 0.7);
+border: 2px solid white;
+border-radius: 10px;
+}
+
+#showdetail h1 {
+color: white;
+font-family: sans-serif;
+}
+
+
+
+
+#showdetail{
+width: 50%;
+height: 30rem;
+background-color: rgba(15, 15, 15, 0.7);
+border-radius: 20px;
+position: absolute;
+top: 10%;
+left: 25%;
+text-align: center;
+font-size: 18px;
+line-height: 1.5;
+overflow: auto;
+scrollbar-width: thin;
+color: white;
+font-family: sans-serif;
+}
+
+#totalprice{
+width: 100%;
+height: 2rem;
+position: absolute;
+top:35rem;
+text-align: center;
+font-size: 25px;
+color: rgb(111, 226, 209);
+font-family: sans-serif;
+}
+
+#shopingcart {
+width: 7rem;
+height: auto;
+position: absolute;
+bottom: 3%;
+left: 45%;
+}
+
+#cartno{
+position: absolute;    
+bottom: 12%;
+left: 50%;
+width: 40px;
+height: 40px;
+background-color: red;
+border-radius: 100px;
+color: white;
+font-family: sans-serif;
+display: none;
+text-align: center;
+padding-top: 10px;
+font-weight: bold;
+}
+
+
+@media (max-width : 600px){ 
+    .input_container{
+    flex-wrap: wrap;
+    gap: 5px;
+     }
+
+    input{
+    font-size: 12px;
+
+
+     }
+
+    #showdetail {
+    height: 25rem;
+    top: 20%;
+    font-size: 12px;
+    }
+    
+}
